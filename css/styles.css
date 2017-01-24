@@ -1,0 +1,182 @@
+/***********************************************
+GENERAL
+***********************************************/
+
+* {
+	box-sizing: border-box;	
+	font-family: 'Merriweather', serif; 
+}
+
+input, 
+select {		
+	margin-bottom: 5px;
+}
+
+p, 
+label ,
+input, 
+select, 
+textarea {
+	border-radius: 3px;
+	font-size: .9rem;
+	color: 	#808080;
+	border: none;
+}
+
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+legend {
+	font-weight: 700;
+	padding-top: 15px;
+}
+
+
+
+/***********************************************
+LAYOUT STYLES
+***********************************************/
+
+.top {
+	text-align: center;
+	background: #333;
+	color: white;
+	padding: 20px 0;
+	top: 0px;
+	position: fixed;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.top h2 {
+	margin: 0;
+}
+
+.lower_header {
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 40px;
+}
+
+.thick {
+	border-top: 4px solid #333;
+	margin-bottom: 1px;
+}
+
+.thin {
+	border-top: 2px solid #333;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.contact label:nth-of-type(-n+7) {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container {
+	width: 90%;
+	margin: 70px auto;
+}
+
+.contact input , select {
+	width: 100%;
+	height: 40px;
+	padding: 5px;
+	background-color: #F5F5F5;
+}
+
+.contact input[id="zip"] {
+	width: 50%;
+}
+
+.contact input[placeholder="Required"] {
+	text-align: right;
+	padding-right: 15px;
+	font-style: italic;
+}
+
+input[type="radio"]:checked  + label,
+input[type="checkbox"]:checked  + label {  
+  color: #1E90FF;
+}
+
+textarea {
+	width: 100%;
+	height: 125px;
+	padding: 10px;
+	margin-bottom: 25px;
+	background-color: #F5F5F5;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 15px;
+	background-color: #1E90FF;
+	color: white;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+input:focus, 
+textarea:focus {
+    background-color: #E0FFFF;
+    border: 1px solid #F47E58;
+	text-align: left;
+}
+
+.form_footer {
+	text-align: center;
+	font-style: italic;
+}
+
+
+
+/***********************************************
+MEDIA QUERIES
+***********************************************/
+
+@media (min-width: 768px) {
+
+	.container {
+	width: 60%;
+	max-width: 1000px;
+	margin: 70px auto;
+	}
+
+	.contact label:nth-of-type(-n+7) {
+	width: 25%;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 40px;
+	}
+	
+	.contact input[id="zip"] {
+	width: 30%;
+	margin-left: 4.5%;
+	}
+	
+	.contact input:nth-of-type(-n+5), 
+	select {
+	float: right;
+	width: 70%;
+	height: 40px;
+	padding: 5px;
+	background-color: #F5F5F5;
+	}
+	
+	.contact input:nth-of-type(-n+5):focus {
+	background-color: #E0FFFF;
+    border: 1px solid #F47E58;
+	}
+
+}
+
+
+
